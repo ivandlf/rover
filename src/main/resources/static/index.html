@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rover From Mars</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="control-panel">
-        <img src="img/rotate-left.png" alt="">
-        <img src="img/back.png" alt="">
-        <img src="img/forward.png" alt="">
-        <img src="img/rotate-right.png" alt="">
+        <img onclick="clickBtnRotateLeft()" src="img/rotate-left.png" class="btn-control" alt="">
+        <img onclick="moveBack()" src="img/back.png"  class="btn-control" alt="">
+        <img onclick="moveForward()" src="img/forward.png" class="btn-control" alt="">
+        <img onclick="clickBtnRotateRight()" src="img/rotate-right.png" class="btn-control" alt="">
     </div>
-    <div id="container" src>
-        <img src="img/rover.png" alt="">
+    <div id="container">
+
+        <img src="img/rover.png" id="rover" alt="">
         <div id="map">
-            <img src="img/map.jpg" alt="">
+
         </div>
+            <img src="img/map.jpg" alt="" class="grid-image">
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>

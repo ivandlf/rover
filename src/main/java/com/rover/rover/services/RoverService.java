@@ -7,4 +7,8 @@ public interface RoverService {
     public Rover getAllRover();
     public RoverDto findById(Long id);
     public void createRover(RoverDto roverDto);
+    public Rover get();
+    void sendCommand(String command);
+
+    void save(RoverDto roverDto);
 }

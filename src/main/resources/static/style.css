@@ -1,0 +1,54 @@
+#rover {
+    position: absolute;
+    width: 100px;
+    transition: all 500ms linear;
+}
+
+.rock {
+    position: absolute;
+    width: 100px;
+    margin-top: 22px;
+}
+
+#control-panel {
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 0.8;
+    bottom: 10px;
+    left: calc(50% - 160px);
+}
+
+#control-panel .btn-control {
+    width: 80px;
+    cursor:pointer;
+}
+
+audio {
+    display:none;
+}
+#map {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Columnas flexibles */
+    grid-auto-rows: 100px; /* Altura fija de las filas */
+}
+
+.vertical-line, .horizontal-line {
+    background-color: white; /* Color de las líneas */
+    border: 1px solid white; /* Borde opcional */
+}
+
+.vertical-line {
+    width: 1px;
+}
+
+.horizontal-line {
+    height: 1px;
+}
+
+.grid-image {
+    height: auto;
+}
