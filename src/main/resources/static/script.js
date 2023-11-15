@@ -29,8 +29,8 @@ async function createMap(){
     }
 
     function moveRover(x,y){
-        document.getElementById("rover").style.left= (x * 100) + 'px'
-        document.getElementById("rover").style.top = (y * 100) + 'px'
+        document.getElementById("rover").style.left= (x * 60) + 'px'
+        document.getElementById("rover").style.top = (y * 60) + 'px'
     }
 
     function createRock(x, y){
@@ -40,8 +40,8 @@ async function createMap(){
         rock.setAttribute("class", "rock")
         var container = document.getElementById("container")
         container.appendChild(rock)
-        rock.style.left = (x * 100) + 'px'
-        rock.style.top = (y * 100) + 'px'
+        rock.style.left = (x * 60) + 'px'
+        rock.style.top = (y * 60) + 'px'
         console.log(rock);
     }
         

@@ -1,12 +1,16 @@
+body {
+    margin: 0;
+}
+
 #rover {
     position: absolute;
-    width: 100px;
+    width: 50px;
     transition: all 500ms linear;
 }
 
 .rock {
     position: absolute;
-    width: 100px;
+    width: 50px;
     margin-top: 22px;
 }
 
@@ -50,5 +54,5 @@ audio {
 }
 
 .grid-image {
-    height: auto;
+    width: 75rem;
 }
